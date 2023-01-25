@@ -24,6 +24,7 @@ const endpointLogin = async (
         if(usuariosEncontrados && usuariosEncontrados.length > 0){
             const usuarioEncontrado = usuariosEncontrados[0];
 
+            //gerando token com id
             const token = jwt.sign({_id : usuarioEncontrado._id}, MINHA_CHAVE_JWT);
 
             return res.status(200).json({
