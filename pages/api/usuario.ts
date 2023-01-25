@@ -1,5 +1,5 @@
 import type {NextApiRequest, NextApiResponse} from 'next';
-import {validarTokenJWT} from '../../middlewares/ValidarTokenJWT';
+import {validarTokenJWT} from '../../middlewares/validarTokenJWT';
 
 
 const usuarioEndpoint = (req : NextApiRequest, res : NextApiResponse) => {
